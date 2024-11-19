@@ -1,10 +1,10 @@
 package piscine
 
-func PrintIf(str string) string {
+func PrintIfNot(str string) string {
 	result := ""
-	if len(str) >= 3 || len(str)==0 {
+	if len(str) < 3{
 		result = "G\n"
-	}else{
+	}else {
 		return "Invalid Input\n"
 	}
 	return result
