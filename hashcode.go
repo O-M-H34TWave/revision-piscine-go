@@ -1,11 +1,13 @@
 package piscine
 
 func HashCode(dec string) string {
-	var hash uint64
-	for _, v := range dec {
-		if v >= 0 && v <= 127 {
-			
+	code := ""
+	for i := 0; i < len(dec); i++ {
+		ascii := (len(dec) + int(dec[i])) % 127
+		if ascii <32 || ascii > 126 {
+			ascii+= 33
 		}
+		code += string(ascii)
 	}
-	return string(hash)
+	return code
 }

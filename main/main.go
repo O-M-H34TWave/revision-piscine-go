@@ -6,6 +6,8 @@ import (
 )
 
 func main() {
-	fmt.Println(piscine.IsUpper("A"))
-	fmt.Println(piscine.IsUpper("A!"))
+	fmt.Println(piscine.RepeatAlpha("abc"))
+	fmt.Println(piscine.RepeatAlpha("Choumi."))
+	fmt.Println(piscine.RepeatAlpha(""))
+	fmt.Println(piscine.RepeatAlpha("abacadaba 01!"))
 }
