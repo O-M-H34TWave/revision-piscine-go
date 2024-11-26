@@ -6,6 +6,7 @@ func LastWord(s string) string {
 		if s[i] == ' ' {
 			return ""
 		}
+		
 	}
 	return last
 }
