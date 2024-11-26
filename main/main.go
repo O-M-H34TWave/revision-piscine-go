@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	fmt.Print(piscine.LastWord("this        ...       is sparta, then again, maybe    not"))
-	fmt.Print(piscine.LastWord(" lorem,ipsum "))
-	fmt.Print(piscine.LastWord(" "))
+	fmt.Print(piscine.FromTo(1, 10))
+	fmt.Print(piscine.FromTo(10, 1))
+	fmt.Print(piscine.FromTo(10, 10))
+	fmt.Print(piscine.FromTo(100, 10))
 }
